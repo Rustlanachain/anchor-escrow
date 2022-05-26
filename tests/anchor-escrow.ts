@@ -10,10 +10,10 @@ import { assert } from "chai";
 describe('anchor-escrow', () => {
 
   // Configure the client to use the local cluster.
-  const provider = anchor.AnchorProvider.env();
+  const provider = anchor.Provider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.AnchorEscrow as Program<AnchorEscrow>;
+  const program = anchor.workspace.AnchorEscrow ;
 
   let mintA = null;
   let mintB = null;
